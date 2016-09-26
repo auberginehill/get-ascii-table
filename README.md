@@ -40,7 +40,7 @@
             </p>
             <p>ASCII was originally developed during the sixties for use with teleprinters and other teletypewriters (TTY) to code the messages, which were sent over various communications channels. The earliest teleprinters emulated the behavior of actual typewriters with rotating disks and other mechanical parts.</p>
             <p>The character set in the ASCII code is fairly limited; the ASCII code consists of 128 characters, which include 33 non-printing control characters (that affect how the text is being processed, but are nowadays rarely used for their original purposes) and 95 printable characters. Unfortunately there isn't any unified version of "extended ASCII" characters, only different encoding systems, such as ISO 8859-1 (also called as ISO Latin-1), which may or may not build upon the ASCII characters.</p>
-            <p>Get-AsciiTable generates a series of numbers ranging from 0 to 255, and uses those numbers as a basis for the character retrieval built in the PowerShell by using the "<code>[char]</code>number" -mechanism to recall a specific ASCII character. The HTML number generating parameters and other data has been added beforehand on the presumption that the enumeration starts from the first character (i.e. from the number zero character "(null)") and all of the data is pretty much hard-coded. A far better solution would be that a current list would be fetched from somewhere, but good sources seem to be scarce and to connect to the Internet in this case seems a bit far fetched also. This might, however, be an area of future development of Get-AsciiTable.</p>
+            <p>Get-AsciiTable generates a series of numbers ranging from 0 to 255, and uses those numbers as a basis for the character retrieval system built in the PowerShell by using the "<code>[char]</code>number" -mechanism to recall a specific ASCII character. The HTML number generating parameters and other data has been added beforehand on the presumption that the enumeration starts from the first character (i.e. from the number zero character "(null)") and all the data is pretty much hard-coded. A far better solution would be that a current list would be fetched from somewhere, but good sources seem to be scarce and to connect to the Internet in this case seems a bit far fetched, too. This might, however, be an area of future development of Get-AsciiTable.</p>
     </tr>
     <tr>
         <td style="padding:6px"><strong>Homepage:</strong></td>
@@ -110,7 +110,7 @@
                 <p>
                     <li>
                         <h5>Parameter <code>-Sort</code></h5>
-                        <p>Specifies which column is the primary sort column in the HTML ASCII Table and other outputs. Only one column may be selected in one query as the primary column. Only one column may be selected in one command as the primary column. If <code>-Sort</code> parameter is not defined, Get-AsciiTable will try to sort by Decimal.</p>
+                        <p>Specifies which column is the primary sort column in the HTML ASCII Table and other outputs. Only one column may be selected in one query as the primary column. If <code>-Sort</code> parameter is not defined, Get-AsciiTable will try to sort by Decimal.</p>
                         <p>In the HTML ASCII Table and other outputs all the headers are sortable (with the commands) and some headers have aliases, too. Valid <code>-Sort</code> values are listed below along with the default order (descending or ascending). Please also see the Examples section for further usage examples.</p>
                         <ol>
                             <h4>Valid <code>-Sort</code> values:</h4>
@@ -357,9 +357,6 @@
         <td style="padding:6px">
             <ul>
                 <p>
-                    <li>Please note that the default search location is defined at line 15 for the <code>-Path</code> parameter (as an alias of <code>-Paths</code>) with the <code>$Paths</code> variable.</li>
-                </p>
-                <p>
                     <li>Please note that when the eight ASCII character "(bell)" (<code>[char]7</code> in the PowerShell language) is enumerated, an actual audible "bell" sound may occur. If that happens, it is intended action, and doesn't indicate nothing else than that the system in which Get-AsciiTable is run is following the ASCII principles by the book and is ASCII compatible. The "bell" sound is hard-coded to and assigned to the eight ASCII character, and is a reminescent of and a good representative of all the other control characters found amongst the first ASCII characters. The actual sound may vary according to the system and it may be agnostic to the OS sound level settings.</li>
                     <li>Please note that there is, however, probably an actual glitch happening. In the generated CSV-file on the second line (i.e. below the header row) the two first instances are written on a single line instead of each object (null-character and the start_of_heading-character) to their own line. This behavior seems to be prevalent, when the first ASCII character (null) (or as in the PowerShell language <code>[char]0</code>) enters the Export-Csv pipeline.</li>
                     <li>Please also note that the two files are created in a directory, which is end-user settable in each query command with the <code>-Path</code> parameter. The default save location is defined with the <code>$Path</code> variable (at line 12) and the <code>-Path</code> parameter also has an alias called <code>-ReportPath</code>. The default save location <code>$env:temp</code> variable points to the current temp folder. The default value of the <code>$env:temp</code> variable is <code>C:\Users\&lt;username&gt;\AppData\Local\Temp</code> (i.e. each user account has their own separate temp folder at path <code>%USERPROFILE%\AppData\Local\Temp</code>). To see the current temp path, for instance a command
@@ -423,7 +420,7 @@
                     <li><code>./Get-AsciiTable -Path C:\Scripts -Sort Printable -Descending -Encoding UTF32</code><br />
                     Run the script and save the HTML ASCII Table and the adjacent CSV-file to <code>C:\Scripts</code>. Sort the data by the column name Printable in a descending order, and use UTF32 encoding, when writing the CSV-file. Please note, that <code>-Path</code> can be omitted in this example, because
                     <br />
-                    <br />./Get-AsciiTable C:\Scripts -Sort Printable -Descending -Encoding UTF32
+                    <br /><code>./Get-AsciiTable C:\Scripts -Sort Printable -Descending -Encoding UTF32</code>
                     <br />
                     <br />will result in the exact same outcome.</li>
                 </p>
