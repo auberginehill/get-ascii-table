@@ -284,7 +284,7 @@
         <th>:arrow_right:</th>
         <td style="padding:6px">
             <ul>
-                <li>Generates an HTML ASCII Table and an adjacent CSV-file in a specified Path (<code>$Path = "$env:temp"</code> at line 12), which is user-settable with the <code>-Path</code>  parameter. Please notice, that there probably is a glitch in the generated CSV-file (for more information, please see the Notes section). In addition to that...</li>
+                <li>Generates an HTML ASCII Table and an adjacent CSV-file in a specified Path (<code>$Path = "$env:temp"</code> at line 12), which is user-settable with the <code>-Path</code>  parameter. Please notice, that there probably is a glitch in the generated CSV-file (for more information, please see the Notes section). Displays culture related information in console. In addition to that...</li>
             </ul>
         </td>
     </tr>
