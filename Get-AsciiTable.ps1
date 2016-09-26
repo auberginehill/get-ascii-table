@@ -503,7 +503,8 @@ using the UTF8 encoding.
 Generates an HTML ASCII Table and an adjacent CSV-file in a specified Path
 ($Path = "$env:temp" at line 12), which is user-settable with the -Path parameter.
 Please notice, that there probably is a glitch in the generated CSV-file (for more
-information, please see the Notes section). In addition to that...
+information, please see the Notes section). Displays culture related information 
+in console. In addition to that...
 
 
 One pop-up window "$characters_selection" (Out-GridView) with sortable headers (with a click):
