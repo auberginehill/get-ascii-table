@@ -151,7 +151,7 @@
                                     </tr>
                                     <tr>
                                         <td style="padding:6px"><code>ASCII</code></td>
-                                        <td style="padding:6px">Sort by ASCII</td>
+                                        <td style="padding:6px">Sort by Value</td>
                                         <td align="center" style="padding:6px">(param)</td>
                                         <td align="center" style="padding:6px">Ascending</td>
                                     </tr>
@@ -175,7 +175,7 @@
                                     </tr>
                                     <tr>
                                         <td style="padding:6px"><code>HTML</code></td>
-                                        <td style="padding:6px">Sort by HTML</td>
+                                        <td style="padding:6px">Sort by HTML Number</td>
                                         <td align="center" style="padding:6px">(param)</td>
                                         <td align="center" style="padding:6px">Ascending</td>
                                     </tr>
