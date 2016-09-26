@@ -45,7 +45,7 @@
     <tr>
         <td style="padding:6px"><strong>Homepage:</strong></td>
         <td style="padding:6px"><a href="https://github.com/auberginehill/get-ascii-table">https://github.com/auberginehill/get-ascii-table</a>
-            <br />Short URL: <a href="http://tinyurl.com/jjl9wng">http://tinyurl.com/</a></td>
+            <br />Short URL: <a href="http://tinyurl.com/hdjlqdu">http://tinyurl.com/hdjlqdu</a></td>
     </tr>
     <tr>
         <td style="padding:6px"><strong>Version:</strong></td>
