@@ -406,7 +406,7 @@
                     <br />
                     <br /><code>./Get-AsciiTable -ReportPath "C:\Scripts"</code>
                     <br />
-                    <br />will do the exactly same thing. Please note that the -Path is not mandatory in this example and that the quotation marks can be left out, since the path name doesn't contain any space characters (<code>./Get-AsciiTable C:\Scripts</code>).</li>
+                    <br />will do the exactly same thing. Please note that the <code>-Path</code> is not mandatory in this example and that the quotation marks can be left out, since the path name doesn't contain any space characters (<code>./Get-AsciiTable C:\Scripts</code>).</li>
                 </p>
                 <p>
                     <li><code>./Get-AsciiTable -Path E:\chiore -Sort Value -Descending</code><br />
