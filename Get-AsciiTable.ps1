@@ -407,13 +407,13 @@ such as ISO 8859-1 (also called as ISO Latin-1), which may or may not build upon
 the ASCII characters.
 
 Get-AsciiTable generates a series of numbers ranging from 0 to 255, and uses those
-numbers as a basis for the character retrieval built in the PowerShell by using 
+numbers as a basis for the character retrieval system built in the PowerShell by using 
 the "[char]number" -mechanism to recall a specific ASCII character. The HTML numbers
 and other data has been added beforehand on the presumption that the enumeration 
 starts from the first character (i.e. from the number zero character "(null)") and
-the data is pretty much hard-coded. A far better solution would be that a current 
+all the data is pretty much hard-coded. A far better solution would be that a current 
 list would be fetched from somewhere, but good sources seem to be scarce and to 
-connect to the Internet in this case seems a bit far fetched also. This might, 
+connect to the Internet in this case seems a bit far fetched, too. This might, 
 however, be an area of future development of Get-AsciiTable.
 
 .PARAMETER Path
