@@ -216,14 +216,102 @@ Process {
                         } # else
 
 
+        # Give names to the Control Characters
+        # Source: http://www.neurophys.wisc.edu/comp/docs/ascii/
+        # Source: http://cse.csusb.edu/dick/samples/comp.text.ASCII.html
+        If       ($_ -eq 0  ) { $character = '[NUL]'
+        } ElseIf ($_ -eq 1  ) { $character = '[SOH]'
+        } ElseIf ($_ -eq 2  ) { $character = '[STX]'
+        } ElseIf ($_ -eq 3  ) { $character = '[ETX]'
+        } ElseIf ($_ -eq 4  ) { $character = '[EOT]'
+        } ElseIf ($_ -eq 5  ) { $character = '[ENQ]'
+        } ElseIf ($_ -eq 6  ) { $character = '[ACK]'
+        } ElseIf ($_ -eq 7  ) { $character = '[BEL]'
+        } ElseIf ($_ -eq 8  ) { $character = '[BS]'
+        } ElseIf ($_ -eq 9  ) { $character = '[HT]'
+        } ElseIf ($_ -eq 10 ) { $character = '[LF]'
+        } ElseIf ($_ -eq 11 ) { $character = '[VT]'
+        } ElseIf ($_ -eq 12 ) { $character = '[FF]'
+        } ElseIf ($_ -eq 13 ) { $character = '[CR]'
+        } ElseIf ($_ -eq 14 ) { $character = '[SO]'
+        } ElseIf ($_ -eq 15 ) { $character = '[SI]'
+        } ElseIf ($_ -eq 16 ) { $character = '[DLE]'
+        } ElseIf ($_ -eq 17 ) { $character = '[DC1]'
+        } ElseIf ($_ -eq 18 ) { $character = '[DC2]'
+        } ElseIf ($_ -eq 19 ) { $character = '[DC3]'
+        } ElseIf ($_ -eq 20 ) { $character = '[DC4]'
+        } ElseIf ($_ -eq 21 ) { $character = '[NAK]'
+        } ElseIf ($_ -eq 22 ) { $character = '[SYN]'
+        } ElseIf ($_ -eq 23 ) { $character = '[ETB]'
+        } ElseIf ($_ -eq 24 ) { $character = '[CAN]'
+        } ElseIf ($_ -eq 25 ) { $character = '[EM]'
+        } ElseIf ($_ -eq 26 ) { $character = '[SUB]'
+        } ElseIf ($_ -eq 27 ) { $character = '[ESC]'
+        } ElseIf ($_ -eq 28 ) { $character = '[FS]'
+        } ElseIf ($_ -eq 29 ) { $character = '[GS]'
+        } ElseIf ($_ -eq 30 ) { $character = '[RS]'
+        } ElseIf ($_ -eq 31 ) { $character = '[US]'
+        } ElseIf ($_ -eq 32 ) { $character = '[SP]'
+        } ElseIf ($_ -eq 127) { $character = '[DEL]'
+        } Else {
+            $character = [char]$_
+        } # else
+
+
+        # Define the descriptions for the Control Characters
+        # Source: https://tools.ietf.org/html/rfc20
+        # Source: https://skew.org/iso-ir-001/
+        # Reference: http://real-world-systems.com/docs/ANSIcode.html
+        If       ($_ -eq 0  ) { $description = 'Null: A control character used to accomplish media-fill or time-fill (transmits a character with all bits = 0)'
+        } ElseIf ($_ -eq 1  ) { $description = 'Start of Heading (start of header)'
+        } ElseIf ($_ -eq 2  ) { $description = 'Start of Text (end of header)'
+        } ElseIf ($_ -eq 3  ) { $description = 'End of Text: A transmission control character that terminates text'
+        } ElseIf ($_ -eq 4  ) { $description = 'End of Transmission: The conclusion of the transmission of one or more texts'
+        } ElseIf ($_ -eq 5  ) { $description = 'Enquiry, the first usage after the connection is established denotes the requesting of a response to the question "Who are you"'
+        } ElseIf ($_ -eq 6  ) { $description = 'Acknowledged (an affirmative response sent back by the receiver to the original sender)'
+        } ElseIf ($_ -eq 7  ) { $description = 'Bell: Rings the bell or beeps'
+        } ElseIf ($_ -eq 8  ) { $description = 'Backspace: A format effector that moves the active position one character position backwards'
+        } ElseIf ($_ -eq 9  ) { $description = 'Horizontal Tabulation: A format effector that moves the active position to the next predetermined horizontal stop'
+        } ElseIf ($_ -eq 10 ) { $description = 'Line Feed: A format effector that moves the active position downward one line to the corresponding character position'
+        } ElseIf ($_ -eq 11 ) { $description = 'Vertical Tabulation: A format effector that moves the active position downward on the next predetermined line without changing the corresponding character position'
+        } ElseIf ($_ -eq 12 ) { $description = 'Form Feed: A format effector that moves the active position to the next form or page on a predetermined line without changing the corresponding character position (a distant relative to a page break)'
+        } ElseIf ($_ -eq 13 ) { $description = 'Carriage Return: A format effector that moves the active position to the first character position (after the left margin) on the same line'
+        } ElseIf ($_ -eq 14 ) { $description = 'Shift Out of ASCII, used in conjunction with [SI] and [ESC]'
+        } ElseIf ($_ -eq 15 ) { $description = 'Shift In(to) ASCII, used in conjunction with [SO] and [ESC]'
+        } ElseIf ($_ -eq 16 ) { $description = 'Data Link Escape: Escapes the following supplementary transmission control functions'
+        } ElseIf ($_ -eq 17 ) { $description = 'Device Control 1 (for example ON)'
+        } ElseIf ($_ -eq 18 ) { $description = 'Device Control 2'
+        } ElseIf ($_ -eq 19 ) { $description = 'Device Control 3 (for example OFF)'
+        } ElseIf ($_ -eq 20 ) { $description = 'Device Control 4'
+        } ElseIf ($_ -eq 21 ) { $description = 'Negative Acknowledgment (a negative response sent back by the receiver to the original sender)'
+        } ElseIf ($_ -eq 22 ) { $description = 'Synchronous Idle: Used by synchronous transmission systems to provide a signal from which synchronism may be achieved or retained'
+        } ElseIf ($_ -eq 23 ) { $description = 'End of Transmission Block: Indicates the end of a transmission block of data (if the data is divided into such blocks)'
+        } ElseIf ($_ -eq 24 ) { $description = 'Cancel: The preceding data is erraneous'
+        } ElseIf ($_ -eq 25 ) { $description = 'End of Medium (indicating for example the end of the used portion of a medium or the physical end of the medium or the start of a "off the records" -section)'
+        } ElseIf ($_ -eq 26 ) { $description = 'Substitute Character: A control character used (automatically) in the place of a character that has (automatically) been found to be invalid or in error'
+        } ElseIf ($_ -eq 27 ) { $description = 'Escape: Escapes the following bit combinations to provide additional characters (an extended character set)'
+        } ElseIf ($_ -eq 28 ) { $description = 'File Separator or Information Separator Four: A control character used to separate and qualify data; delimits a data item called a "file"'
+        } ElseIf ($_ -eq 29 ) { $description = 'Group Separator or Information Separator Three: A control character used to separate and qualify data; delimits a data item called a "group"'
+        } ElseIf ($_ -eq 30 ) { $description = 'Record Separator or Information Separator Two: A control character used to separate and qualify data; delimits a data item called a "record"'
+        } ElseIf ($_ -eq 31 ) { $description = 'Unit Separator or Information Separator One: A control character used to separate and qualify data; delimits a data item called an "unit"'
+        } ElseIf ($_ -eq 32 ) { $description = 'Blank Space character'
+        } ElseIf ($_ -eq 127) { $description = 'Delete: Erase a character on the punched paper tape'
+        } Else {
+            $description = ''
+        } # else
+
+
+
+
         # Add the foreach number in question as an object (with properties) to the collection of characters
         $characters += $obj_characters = New-Object -TypeName PSCustomObject -Property @{
 
                     'Number'        = $_
                     'Name'          = $_
                     'Decimal'       = $_
-                    'Character'     = [char]$_
                     'Value'         = [char]$_
+                    'Character'     = $character
+                    'Description'   = $description
                     'HTML Number'   = $html_number
                     'Universal'     = If ($_ -le 127) { $true } Else { $false }
                     'Subset'        = If ($_ -le 127) { "-" } Else { "Something else than ASCII" }
@@ -246,7 +334,7 @@ End {
 
     # Display the characters in a pop-up window (Out-GridView)
     $characters.PSObject.TypeNames.Insert(0,"ASCII Characters")
-    $characters_selection = $characters | Select-Object 'Genus','Universal','Name','Decimal','Value','Type','HTML Number','Number','Character','Subset','Printable','Encoding' | Sort-Object -property $Sort -Descending:$Descending
+    $characters_selection = $characters | Select-Object 'Genus','Universal','Name','Decimal','Value','Type','HTML Number','Number','Character','Description','Subset','Printable','Encoding' | Sort-Object -property $Sort -Descending:$Descending
     $characters_selection | Out-GridView
 
 
@@ -407,13 +495,13 @@ such as ISO 8859-1 (also called as ISO Latin-1), which may or may not build upon
 the ASCII characters.
 
 Get-AsciiTable generates a series of numbers ranging from 0 to 255, and uses those
-numbers as a basis for the character retrieval system built in the PowerShell by using 
+numbers as a basis for the character retrieval system built in the PowerShell by using
 the "[char]number" -mechanism to recall a specific ASCII character. The HTML numbers
-and other data has been added beforehand on the presumption that the enumeration 
+and other data has been added beforehand on the presumption that the enumeration
 starts from the first character (i.e. from the number zero character "(null)") and
-all the data is pretty much hard-coded. A far better solution would be that a current 
-list would be fetched from somewhere, but good sources seem to be scarce and to 
-connect to the Internet in this case seems a bit far fetched, too. This might, 
+all the data is pretty much hard-coded. A far better solution would be that a current
+list would be fetched from somewhere, but good sources seem to be scarce and to
+connect to the Internet in this case seems a bit far fetched, too. This might,
 however, be an area of future development of Get-AsciiTable.
 
 .PARAMETER Path
@@ -462,6 +550,7 @@ section for further usage examples.
     HTML                    Sort by HTML Number             (param)       Ascending
     Number                  Sort by Number                  (param)       Ascending
     Character               Sort by Character               (param)       Ascending
+    Description             Sort by Description             (param)       Ascending
     Subset                  Sort by Subset                  (param)       Ascending
     Printable               Sort by Printable               (param)       Ascending
     Encoding                Sort by Encoding                (param)       Ascending
@@ -496,14 +585,14 @@ values are listed below.
                             UTF32                       -Encoding UTF32
 
 
-If the -Encoding parameter is not used in the command, the CSV-file will be written 
+If the -Encoding parameter is not used in the command, the CSV-file will be written
 using the UTF8 encoding.
 
 .OUTPUTS
 Generates an HTML ASCII Table and an adjacent CSV-file in a specified Path
 ($Path = "$env:temp" at line 12), which is user-settable with the -Path parameter.
 Please notice, that there probably is a glitch in the generated CSV-file (for more
-information, please see the Notes section). Displays culture related information 
+information, please see the Notes section). Displays culture related information
 in console. In addition to that...
 
 
@@ -536,18 +625,18 @@ control characters found amongst the first ASCII characters. The actual sound ma
 vary according to the system and it may be agnostic to the OS sound level settings.
 
 Please note that there is, however, probably an actual glitch happening. In the
-generated CSV-file on the second line (i.e. below the header row) the two first 
-instances are written on a single line instead of each object (null-character and 
-the start_of_heading-character) to their own line. This behavior seems to be 
-prevalent, when the first ASCII character (null) (or as in the PowerShell language 
+generated CSV-file on the second line (i.e. below the header row) the two first
+instances are written on a single line instead of each object (null-character and
+the start_of_heading-character) to their own line. This behavior seems to be
+prevalent, when the first ASCII character (null) (or as in the PowerShell language
 [char]0) enters the Export-Csv pipeline.
 
 Please also note that the two files are created in a directory, which is end-user
-settable in each command with the -Path parameter. The default save location is 
-defined with the $Path variable (at line 12) and the -Path parameter also has an 
-alias called -ReportPath. The default save location $env:temp variable points to 
+settable in each command with the -Path parameter. The default save location is
+defined with the $Path variable (at line 12) and the -Path parameter also has an
+alias called -ReportPath. The default save location $env:temp variable points to
 the current temp folder. The default value of the $env:temp variable is
-C:\Users\<username>\AppData\Local\Temp (i.e. each user account has their own 
+C:\Users\<username>\AppData\Local\Temp (i.e. each user account has their own
 separate temp folder at path %USERPROFILE%\AppData\Local\Temp). To see the
 current temp path, for instance a command
 
@@ -559,7 +648,7 @@ http://www.eightforums.com/tutorials/23500-temporary-files-folder-change-locatio
 
     Homepage:           https://github.com/auberginehill/get-ascii-table
                         Short URL: http://tinyurl.com/hdjlqdu
-    Version:            1.0
+    Version:            1.1
 
 .EXAMPLE
 ./Get-AsciiTable
