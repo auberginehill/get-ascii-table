@@ -1,6 +1,8 @@
 <!-- Visual Studio Code: For a more comfortable reading experience, use the key combination Ctrl + Shift + V
-     Visual Studio Code: To crop the tailing end space characters out, please use the key combination Ctrl + Shift + X
+     Visual Studio Code: To crop the tailing end space characters out, please use the key combination Ctrl + A Ctrl + K Ctrl + X (Formerly Ctrl + Shift + X)
      Visual Studio Code: To improve the formatting of HTML code, press Shift + Alt + F and the selected area will be reformatted in a html file.
+     Visual Studio Code shortcuts: http://code.visualstudio.com/docs/customization/keybindings (or https://aka.ms/vscodekeybindings)
+     Visual Studio Code shortcut PDF (Windows): https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 
 
    _____      _                          _ _ _______    _     _
@@ -49,7 +51,7 @@
     </tr>
     <tr>
         <td style="padding:6px"><strong>Version:</strong></td>
-        <td style="padding:6px">1.0</td>
+        <td style="padding:6px">1.1</td>
     </tr>
     <tr>
         <td style="padding:6px"><strong>Sources:</strong></td>
@@ -57,7 +59,7 @@
             <table>
                 <tr>
                     <td style="padding:6px">Emojis:</td>
-                    <td style="padding:6px"><a href="https://api.github.com/emojis">https://api.github.com/emojis</a></td>
+                    <td style="padding:6px"><a href="https://github.com/auberginehill/emoji-table">Emoji Table</a></td>
                 </tr>
                 <tr>
                     <td style="padding:6px">Martin Pugh:</td>
@@ -201,6 +203,12 @@
                                         <td align="center" style="padding:6px">(param)</td>
                                         <td align="center" style="padding:6px">Ascending</td>
                                     </tr>
+                                    <tr>
+                                        <td style="padding:6px"><code>Description</code></td>
+                                        <td style="padding:6px">Sort by Description</td>
+                                        <td align="center" style="padding:6px">(param)</td>
+                                        <td align="center" style="padding:6px">Ascending</td>
+                                    </tr>                                    
                                     <tr>
                                         <td style="padding:6px"><code>Subset</code></td>
                                         <td style="padding:6px">Sort by Subset</td>
@@ -595,3 +603,59 @@
         <td style="padding:6px"><a href="https://github.com/auberginehill/update-adobe-flash-player">Update-AdobeFlashPlayer</a></td>
     </tr>
 </table>
+
+
+
+
+### Related scripts
+
+ <table>
+    <tr>
+        <th><img class="emoji" title="www" alt="www" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0023-20e3.png"></th>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/firefox-customization-files">Firefox Customization Files</a></td>
+    </tr>
+    <tr>
+        <th rowspan="14"></th>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-battery-info">Get-BatteryInfo</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-computer-info">Get-ComputerInfo</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-directory-size">Get-DirectorySize</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-installed-programs">Get-InstalledPrograms</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-installed-windows-updates">Get-InstalledWindowsUpdates</a></td>
+    </tr>    
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-ram-info">Get-RAMInfo</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://gist.github.com/auberginehill/eb07d0c781c09ea868123bf519374ee8">Get-TimeDifference</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-time-zone-table">Get-TimeZoneTable</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/get-unused-drive-letters">Get-UnusedDriveLetters</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/emoji-table">Emoji Table</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/java-update">Java-Update</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/rock-paper-scissors">Rock-Paper-Scissors</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/toss-a-coin">Toss-a-Coin</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://github.com/auberginehill/update-adobe-flash-player">Update-AdobeFlashPlayer</a></td>
+    </tr>
+</table>
+
