@@ -218,7 +218,6 @@ Process {
 
         # Give names to the Control Characters
         # Source: http://www.neurophys.wisc.edu/comp/docs/ascii/
-        # Source: http://cse.csusb.edu/dick/samples/comp.text.ASCII.html
         If       ($_ -eq 0  ) { $character = '[NUL]'
         } ElseIf ($_ -eq 1  ) { $character = '[SOH]'
         } ElseIf ($_ -eq 2  ) { $character = '[STX]'
@@ -455,6 +454,9 @@ https://community.spiceworks.com/scripts/show/1738-get-foldersizes              
 http://powershell.com/cs/media/p/24814.aspx                                                   # Tobias Weltner: "PowerTips Monthly Volume 2: Arrays and Hash Tables"
 https://blogs.technet.microsoft.com/heyscriptingguy/2015/09/01/powertip-verify-default-output-encoding-in-powershell/   # PowerTip: "Verify Default Output Encoding in PowerShell"
 http://stackoverflow.com/questions/15114615/dynamic-parameter-accessing-default-value         #  CB.: "Dynamic parameter accessing default value"
+http://www.neurophys.wisc.edu/comp/docs/ascii/                                                # Ravi Kochhar: "ASCII Table: 7-bit"
+https://tools.ietf.org/html/rfc20                                                             # "ASCII format for Network Interchange"
+https://skew.org/iso-ir-001/                                                                  # "The Set Of Control Characters Of ISO 646"
 
 
   _    _      _
@@ -752,6 +754,10 @@ https://community.spiceworks.com/scripts/show/1738-get-foldersizes
 http://powershell.com/cs/media/p/24814.aspx
 https://blogs.technet.microsoft.com/heyscriptingguy/2015/09/01/powertip-verify-default-output-encoding-in-powershell/
 http://stackoverflow.com/questions/15114615/dynamic-parameter-accessing-default-value
+http://www.neurophys.wisc.edu/comp/docs/ascii/
+https://tools.ietf.org/html/rfc20
+https://skew.org/iso-ir-001/
+http://real-world-systems.com/docs/ANSIcode.html
 http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom
 https://blogs.msdn.microsoft.com/powershell/2006/12/11/outputencoding-to-the-rescue/
 https://technet.microsoft.com/en-us/library/hh847796.aspx
