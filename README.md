@@ -81,15 +81,13 @@
                     <td style="padding:6px">Ravi Kochhar:</td>
                     <td style="padding:6px"><a href="http://www.neurophys.wisc.edu/comp/docs/ascii/ ">ASCII Table: 7-bit</a></td>
                 </tr>
-
                 <tr>
                     <td style="padding:6px">Network Working Group:</td>
                     <td style="padding:6px"><a href="https://tools.ietf.org/html/rfc20">ASCII format for Network Interchange</a></td>
                 </tr>
-
                 <tr>
                     <td style="padding:6px">International Standard ISO 646 (Unofficial):</td>
-                    <td style="padding:6px"><a href="https://skew.org/iso-ir-001/">The Set Of Control Characters Of ISO 646</a></td>
+                    <td style="padding:6px"><a href="https://skew.org/iso-ir-001/">The Set Of Control Characters Of ISO 646</a> (or one of the <a href="http://web.archive.org/web/20131208234303/http://skew.org/iso-ir-001/">archive.org versions</a>)</td>
                 </tr>
             </table>
         </td>
@@ -556,7 +554,7 @@
         <td style="padding:6px"><a href="https://tools.ietf.org/html/rfc20">ASCII format for Network Interchange</a></td>
     </tr>
     <tr>
-        <td style="padding:6px"><a href="https://skew.org/iso-ir-001/">The Set Of Control Characters Of ISO 646</a></td>
+        <td style="padding:6px"><a href="https://skew.org/iso-ir-001/">The Set Of Control Characters Of ISO 646</a> (or one of the <a href="http://web.archive.org/web/20131208234303/http://skew.org/iso-ir-001/">archive.org versions</a>)</td>
     </tr>
     <tr>
         <td style="padding:6px"><a href="http://real-world-systems.com/docs/ANSIcode.html">Summary of ANSI standards for ASCII terminals</a></td>
