@@ -77,6 +77,20 @@
                     <td style="padding:6px">CB.:</td>
                     <td style="padding:6px"><a href="http://stackoverflow.com/questions/15114615/dynamic-parameter-accessing-default-value">Dynamic parameter accessing default value</a></td>
                 </tr>
+                <tr>
+                    <td style="padding:6px">Ravi Kochhar:</td>
+                    <td style="padding:6px"><a href="http://www.neurophys.wisc.edu/comp/docs/ascii/ ">ASCII Table: 7-bit</a></td>
+                </tr>
+
+                <tr>
+                    <td style="padding:6px">Network Working Group:</td>
+                    <td style="padding:6px"><a href="https://tools.ietf.org/html/rfc20">ASCII format for Network Interchange</a></td>
+                </tr>
+
+                <tr>
+                    <td style="padding:6px">International Standard ISO 646 (Unofficial):</td>
+                    <td style="padding:6px"><a href="https://skew.org/iso-ir-001/">The Set Of Control Characters Of ISO 646</a></td>
+                </tr>
             </table>
         </td>
     </tr>
@@ -523,7 +537,7 @@
         <td style="padding:6px"><a href="https://github.com/auberginehill/get-ascii-table">Script Homepage</a></td>
     </tr>
     <tr>
-        <th rowspan="13"></th>
+        <th rowspan="17"></th>
         <td style="padding:6px">Martin Pugh: <a href="https://community.spiceworks.com/scripts/show/1738-get-foldersizes">Get-FolderSizes</a></td>
     </tr>
     <tr>
@@ -534,6 +548,18 @@
     </tr>
     <tr>
         <td style="padding:6px">CB.: <a href="http://stackoverflow.com/questions/15114615/dynamic-parameter-accessing-default-value">Dynamic parameter accessing default value</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px">Ravi Kochhar: <a href="http://www.neurophys.wisc.edu/comp/docs/ascii/">ASCII Table: 7-bit</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://tools.ietf.org/html/rfc20">ASCII format for Network Interchange</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="https://skew.org/iso-ir-001/">The Set Of Control Characters Of ISO 646</a></td>
+    </tr>
+    <tr>
+        <td style="padding:6px"><a href="http://real-world-systems.com/docs/ANSIcode.html">Summary of ANSI standards for ASCII terminals</a></td>
     </tr>
     <tr>
         <td style="padding:6px"><a href="http://stackoverflow.com/questions/5596982/using-powershell-to-write-a-file-in-utf-8-without-the-bom">Using PowerShell to write a file in UTF-8 without the BOM</a></td>
@@ -561,46 +587,6 @@
     </tr>
     <tr>
         <td style="padding:6px">ASCII Art: <a href="http://www.figlet.org/">http://www.figlet.org/</a> and <a href="http://www.network-science.de/ascii/">ASCII Art Text Generator</a></td>
-    </tr>
-</table>
-
-
-
-
-### Related scripts
-
- <table>
-    <tr>
-        <th><img class="emoji" title="www" alt="www" height="28" width="28" align="absmiddle" src="https://assets-cdn.github.com/images/icons/emoji/unicode/0023-20e3.png"></th>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-battery-info">Get-BatteryInfo</a></td>
-    </tr>
-    <tr>
-        <th rowspan="9"></th>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-computer-info">Get-ComputerInfo</a></td>
-    </tr>
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-directory-size">Get-DirectorySize</a></td>
-    </tr>    
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-installed-programs">Get-InstalledPrograms</a></td>
-    </tr>
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-installed-windows-updates">Get-InstalledWindowsUpdates</a></td>
-    </tr>
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-ram-info">Get-RAMInfo</a></td>
-    </tr>
-    <tr>
-        <td style="padding:6px"><a href="https://gist.github.com/auberginehill/eb07d0c781c09ea868123bf519374ee8">Get-TimeDifference</a></td>
-    </tr>
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-time-zone-table">Get-TimeZoneTable</a></td>
-    </tr>    
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/get-unused-drive-letters">Get-UnusedDriveLetters</a></td>
-    </tr>
-    <tr>
-        <td style="padding:6px"><a href="https://github.com/auberginehill/update-adobe-flash-player">Update-AdobeFlashPlayer</a></td>
     </tr>
 </table>
 
